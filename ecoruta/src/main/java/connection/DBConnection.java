@@ -8,4 +8,4 @@ public class DBConnection {
     static String bd="XXXXXXXXXXX";
     static String port="3306";
     
-}
+}   
