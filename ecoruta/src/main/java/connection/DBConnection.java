@@ -5,7 +5,7 @@ import com.mysql.jdbc.Connection;
 
 public class DBConnection {
     Connection connection;
-    static String bd="xxxxx";
+    static String bd="ecorutadb";
     static String port="3306";
     static String login="root";
     static String password="admin";
