@@ -11,84 +11,179 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script><link rel="icon" href="img/icono.png"/>
+
+
+
+
     </head>
     <body>
-
-        <header class="container-fluid bg-success d-flex justify-content-center p-3">
-
-            <p class="text-light mb-0 p-2 fs-2">EcoRuta</p>
-
-        </header>
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-light p-3" id="menu">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="iniciar.html">ACCEDER</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="crear.html">CREAR</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contactanos.html">CONTACTANOS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contactanos.html">ACERCA DE</a>
-                        </li>
+        <header class="p-3 mb-2 bg-success text-white">
+            <div class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                        <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+                    </a>
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-lg-start mb-md-0">
+                        <li><a href="#" class="nav-link px-2 text-white">Telefonos: 00+00000000</a></li>
+                        <li><a href="#" class="nav-link px-2 text-white">Correo: info@ecoruta.com</a></li>
                     </ul>
-                </div>
-            </div>
-        </nav>
-
-        
-        <div class="container mt-3">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./img/img1.jpg" class="d-block w-100" alt="desechos"
-                             width="100" height="500">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/img2.jpg" class="d-block w-100" alt="icono"
-                             width="100" height="500">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/img3.jpg" class="d-block w-100" alt="logo2"
-                             width="100" height="500">
+                    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                        <input type="Buscar" class="form-control form-control-dark" placeholder="Buscar..." aria-label="Search">
+                    </form>
+                    <div class="text-end">
+                        <button type="button" class="btn btn-outline-light me-2" href="crear.html">Iniciar</button>
+                        <button type="button" class="btn btn-warning">Registro</button>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
+        </header>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light p-3" id="menu">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="crear.html">ALIADOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contactanos.html">SERVICIOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contactanos.html">PLANES ECOLOGICOS</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
 
-        <section class="w-50 mx-auto text-center pt-5" id="section1">
-            <h1 class="p-3 fs-2 border-top border-3">EcoRuta la mejor solucion para reciclar
-                <span class="text-primary">reciclando de la mejor manera</span></h1>
-                
-                <p class=""><span class="text-primary">reciclando de la mejor manera. mmmmmm
-                    mmmmmmmmmmmmmmmmmmmm
-                    mmmmmmmmmmmmmmmmmmmmmmmmmmmmm</span></p>
-        </section>
-        
-        <section class="container-fluid">
-            <div class="row">
-                
+        <div id="carouselExampleIndicators" class="carousel slide" data-mdb-ride="carousel">
+            <div class="carousel-indicators">
+                <button
+                    type="button"
+                    data-mdb-target="#carouselExampleIndicators"
+                    data-mdb-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                    ></button>
+                <button
+                    type="button"
+                    data-mdb-target="#carouselExampleIndicators"
+                    data-mdb-slide-to="1"
+                    aria-label="Slide 2"
+                    ></button>
+                <button
+                    type="button"
+                    data-mdb-target="#carouselExampleIndicators"
+                    data-mdb-slide-to="2"
+                    aria-label="Slide 3"
+                    ></button>
             </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/header-bg.jpg" class="d-md-block w-100" alt="portada"/>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Primer Slide Mensaje</h2>
+                        <h5>title</h5>
+                        <p>Mensaje ecologico para invitar al usuario</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleIndicators" data-mdb-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleIndicators" data-mdb-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+        <section class="">
+            <!-- Footer -->
+            <footer class="bg-success text-white text-center">
+                <!-- Grid container -->
+                <div class="container p-4">
+                    <!--Grid row-->
+                    <div class="row">
+                        <!--Grid column-->
+                        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">Footer Content</h5>
+
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+                                molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+                                aliquam voluptatem veniam, est atque cumque eum delectus sint!
+                            </p>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">Redes Sociales</h5>
+
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="#!" class="text-white">Link 1</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white">Link 2</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white">Link 3</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white">Link 4</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase mb-0">Integrantes</h5>
+
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#!" class="text-white">Ronald Valdes</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white">Beatriz Giraldo</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white">Nancy Bastos</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white">Alex Pinchao</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white">Edith Tapias</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </div>
+                <!-- Grid container -->
+
+                <!-- Copyright -->
+                <div class="text-center p-3" style="background-color: rgba(25,135,84);">
+                    © 2020 Copyright:
+                    <a class="text-white" href="">Grupo 63-1</a>
+                </div>
+                <!-- Copyright -->
+            </footer>
+            <!-- Footer -->
         </section>
-        
     </body>
 </html>
