@@ -2,7 +2,7 @@
 package beans;
 
 
-public class InicioSesion {
+public class Usuario {
     
     public static void main(String[] args) {
        String nombre;
@@ -11,7 +11,7 @@ public class InicioSesion {
        
     }
 
-    public InicioSesion() {
+    public Usuario() {
     }
     
 }
