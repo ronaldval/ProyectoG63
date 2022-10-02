@@ -24,11 +24,30 @@
                         <li><a href="#" class="nav-link px-2 text-white">Correo: info@ecoruta.com</a></li>
                     </ul>
                     <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-                        <input type="Buscar" class="form-control form-control-dark" placeholder="Buscar..." aria-label="Search">
+                        <input type="Buscar" class="form-control form-control-dark" placeholder="Buscar..." aria-label="Buscar">
                     </form>
                     <div class="text-end">
-                        <button type="button" class="btn btn-outline-light me-2">Iniciar</button>
-                            
+                        <button type="button" class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#exampleModal"> Iniciar Sesion</button>
+                        
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Entrar</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        ...
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                        <button type="button" class="btn btn-primary">Ingresar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <button type="button" class="btn btn-warning">Registro</button>
                     </div>
                 </div>
@@ -52,7 +71,7 @@
                                 <a class="nav-link" href="aliados.html">ALIADOS</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contactanos.html">SERVICIOS</a>
+                                <a class="nav-link" href="servicios.html">SERVICIOS</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="contactanos.html">PLANES ECOLOGICOS</a>
