@@ -37,28 +37,9 @@
                         <input type="Buscar" class="form-control form-control-dark" placeholder="Buscar..." aria-label="Buscar">
                     </form>
                     <div class="text-end">
-                        <button type="button" class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#exampleModal"> Iniciar Sesion</button>
-                        
-                        </button>
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Entrar</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        ...
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                                        <button type="button" class="btn btn-primary">Ingresar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <button type="button" class="btn btn-warning">Registro</button>
+                        <button type="button" onclick="location.href='vistas/ini_sesion.jsp'" class="btn btn-outline-light me-2"> Iniciar Sesion</button>
+                       
+                        <button type="button" onclick="location.href='vistas/crear_cuenta.jsp'" class="btn btn-warning">Registro</button>
                     </div>
                 </div>
             </div>
@@ -72,19 +53,13 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                                <a class="nav-link active" aria-current="page" href="index.jsp">INICIO</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+                                <a class="nav-link" href="vistas/nosotros.jsp">NOSOTROS</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="aliados.html">ALIADOS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="servicios.html">SERVICIOS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contactanos.html">PLANES ECOLOGICOS</a>
+                                <a class="nav-link" href="vistas/contactanos.jsp">CONTACTANOS</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link"  href="Controlador?accion=listar" > Listar Usuario</a>

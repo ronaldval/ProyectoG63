@@ -15,7 +15,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>EcoRuta</title>
+    <title>EcoRuta/reciclador</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- Bootstrap CSS -->
@@ -34,13 +34,14 @@
                     <li><a href="#" class="nav-link px-2 text-white">Telefonos: 00+00000000</a></li>
                     <li><a href="#" class="nav-link px-2 text-white">Correo: info@ecoruta.com</a></li>
                 </ul>
-                <!--<form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3"> 
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3"> 
                     <input type="Buscar" class="form-control form-control-dark" placeholder="Buscar..." aria-label="Search">
                 </form>
                 <div class="text-end">
-                    <button type="button" class="btn btn-outline-light me-2" href="crear.html">Iniciar</button>
-                    <button type="button" class="btn btn-warning">Registro</button>
-                </div>  -->
+                    <button type="button" onclick="location.href='ini_sesion.jsp'" class="btn btn-outline-light me-2"> Iniciar Sesion</button>
+                       
+                        <button type="button" onclick="location.href='crear_cuenta.jsp'" class="btn btn-warning">Registro</button>
+                </div>
             </div>
         </div>
     </header>
@@ -53,20 +54,14 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="nosotros.html">NOSOTROS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="aliados.html">ALIADOS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contactanos.html">SERVICIOS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contactanos.html">PLANES ECOLOGICOS</a>
-                        </li>
+                                <a class="nav-link active" aria-current="page" href="index.jsp">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="nosotros.jsp">NOSOTROS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contactanos.jsp">CONTACTANOS</a>
+                            </li>
                     </ul>
                 </div>
             </div>
