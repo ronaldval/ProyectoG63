@@ -87,7 +87,7 @@ public class DBConnection {
     static String bd="ecorutaNew";
     static String port="3306";
     static String login="root";
-    static String password="";
+    static String password="admin";
     public DBConnection() {
         try {
             Class.forName("com.mysql.jdbc.Driver");
