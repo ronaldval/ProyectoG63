@@ -15,6 +15,7 @@ public class RegistroVo {
     private String apellido;
     private Integer tipo_documento;
     private Integer numero_documento;
+    private Integer telefono;
     private String email;
     private Integer tipo_usuario;
     private String contrasena;
@@ -22,18 +23,26 @@ public class RegistroVo {
     public RegistroVo() {
     }
 
-    public RegistroVo(Integer id, String nombre, String apellido, Integer tipo_documento, Integer numero_documento, String email, Integer tipo_usuario, String contrasena) {
+    public RegistroVo(Integer id, String nombre, String apellido, Integer tipo_documento, Integer numero_documento, Integer telefono, String email, Integer tipo_usuario, String contrasena) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
         this.tipo_documento = tipo_documento;
         this.numero_documento = numero_documento;
+        this.telefono = telefono;
         this.email = email;
         this.tipo_usuario = tipo_usuario;
         this.contrasena = contrasena;
     }
 
-    
+    public Integer getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(Integer telefono) {
+        this.telefono = telefono;
+    }
+
     public Integer getId() {
         return id;
     }

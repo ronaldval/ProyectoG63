@@ -16,26 +16,46 @@ public class OrdenVo {
     private Integer identificacion_usuario;
     private Integer identificacion_recolector;
     private Integer estado;
+    private String direccion;
+    private String ciudad;
     private Date fecha_orden_creacion;
-    private Date fecha_orden_recogida;
+    private String fecha_orden_recogida;
     private String descripcion;
     private String dimensiones;
 
     public OrdenVo() {
     }
 
-    public OrdenVo(Integer Id_orden, Integer numero_orden, Integer identificacion_usuario, Integer identificacion_recolector, Integer estado, Date fecha_orden_creacion, Date fecha_orden_recogida, String descripcion, String dimensiones) {
+    public OrdenVo(Integer Id_orden, Integer numero_orden, Integer identificacion_usuario, Integer identificacion_recolector, Integer estado, String direccion, String ciudad, Date fecha_orden_creacion, String fecha_orden_recogida, String descripcion, String dimensiones) {
         this.Id_orden = Id_orden;
         this.numero_orden = numero_orden;
         this.identificacion_usuario = identificacion_usuario;
         this.identificacion_recolector = identificacion_recolector;
         this.estado = estado;
+        this.direccion = direccion;
+        this.ciudad = ciudad;
         this.fecha_orden_creacion = fecha_orden_creacion;
         this.fecha_orden_recogida = fecha_orden_recogida;
         this.descripcion = descripcion;
         this.dimensiones = dimensiones;
     }
 
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
+    }
+
+    public String getCiudad() {
+        return ciudad;
+    }
+
+    public void setCiudad(String ciudad) {
+        this.ciudad = ciudad;
+    }
+    
     public Integer getId_orden() {
         return Id_orden;
     }
@@ -52,11 +72,11 @@ public class OrdenVo {
         this.fecha_orden_creacion = fecha_orden_creacion;
     }
 
-    public Date getFecha_orden_recogida() {
+    public String getFecha_orden_recogida() {
         return fecha_orden_recogida;
     }
 
-    public void setFecha_orden_recogida(Date fecha_orden_recogida) {
+    public void setFecha_orden_recogida(String fecha_orden_recogida) {
         this.fecha_orden_recogida = fecha_orden_recogida;
     }
 

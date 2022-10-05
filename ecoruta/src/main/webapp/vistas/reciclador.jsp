@@ -82,45 +82,44 @@
                             <th scope="col">Descripcion</th>
                             <th scope="col">Nombre del Usuario</th>
                             <th scope="col">Aceptar pedido</th>
-                            <th scope="col">Recibido</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td></td>
-                            <td></td>
-                            <td><div class="btn-group" role="group">
-                                    <button id="btnGroupDrop1" type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <% 
+                    OrdenDao ordendaot = new OrdenDao();
+                    List<OrdenVo> listordent = ordendaot.listar_total();
+                    Iterator<OrdenVo> iter_ordent = listordent.iterator();
+                    OrdenVo regOrdent = null;
+                    while (iter_ordent.hasNext()){
+                        regOrdent = iter_ordent.next();
+                    
+                %>
+                <tbody>
+                    <tr>
+                        <td><%= regOrdent.getId_orden() %></td>
+                        <td><%= regOrdent.getDescripcion() %></td>
+                        <td><%= regOrdent.getIdentificacion_usuario() %></td>
+                        <td>
+                            <div class="btn-group" role="group">
+                                    <button id="btnGroupDrop1" action="Controlador" value="Update" type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                                         Aceptar Pedido
                                     </button>
-                                    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                        <li><a class="dropdown-item" href="#">SI</a></li>
-                                        <li><a class="dropdown-item" href="#">NO</a></li>
-                                    </ul>
-                                </div></td>
-                            <td></td>
-                            
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                        </tr>
-                    </tbody>
+                            </div>
+                        </td>
+                    </tr>
+                    <% } %>
+                </tbody>
                 </table>
             </div><br><br>
     
     <div class="container">
         <h2>ORDENES ACEPTADAS</h2>
-        <table border = "1">
+        <table class="table table-bordered border-dark">
                 <thead>
                     <tr>
-                        <td>Id orden</td>
-                        <td>Fecha de recolección</td>
-                        <td>Identificacion Usuario</td>
-                        <td>Estado</td>
+                        <th scope="col">Id orden</th>
+                        <th scope="col">Fecha de recolección</th>
+                        <th scope="col">Identificacion Usuario</th>
+                        <th scope="col">Estado</th>
                     </tr>
                 </thead>
                 <% 

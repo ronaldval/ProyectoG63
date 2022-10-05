@@ -75,31 +75,35 @@
         <div class="container">
             <div class="row g-0">
                 <div class="col-sm-6 col-md-8">
-                    <form >
+                    <form action="Controlador">
                         <h1>SOLICITUD DE RECOLECCION</h1>
                         <div class="form-group row">
-                            <label for="validationNombre" class="form-label">Nombre</label>
-                            <input id="nombre" name="nombre" type="text" class="form-control" required>
+                            <label for="validationNombre" class="form-label">Identificacion</label>
+                            <input id="nombre" name="txtIdentificacion" type="text" class="form-control" required>
                         </div>
                         <div class="form-group row">
                             <label for="direccion" class="form-label">Direccion</label>
-                            <input id="direccion" name="direccion" type="text" class="form-control" required>
+                            <input id="direccion" name="txtDireccion" type="text" class="form-control" required>
                         </div>
                         <div class="form-group row">
                             <label for="ciudad" class="form-label">Ciudad</label>
-                            <input id="ciudad" name="ciudad" type="text" class="form-control" required>
+                            <input id="ciudad" name="txtCiudad" type="text" class="form-control" required>
                         </div>
                         <div class="form-group row">
                             <label for="start">Fecha de recolecion</label>
-                            <input type="date" id="start" name="trip-start" value="2022-07-22" min="2022-01-01" max="2023-12-31" required>
+                            <input type="date" id="start" name="date" value="2022-07-22" min="2022-01-01" max="2023-12-31" required>
+                        </div>
+                        <div class="form-group row">
+                            <label for="ciudad" class="form-label">Dimensiones</label>
+                            <input id="ciudad" name="txtDimension" type="text" class="form-control" required>
                         </div><br>
                         <div class="form-floating">
-                            <textarea class="form-control" placeholder="Leave a comment here" id="descripcion" style="height: 100px"></textarea>
+                            <textarea class="form-control" name="txtDescripcion" placeholder="Leave a comment here" id="descripcion" style="height: 100px"></textarea>
                             <label for="descripcion">Deja una breve descripcion del los productos a recojer</label>
                         </div>
 
                         <!-- Submit button -->
-                        <button type="submit" class="btn btn-primary btn-block mb-4">SOLICITAR SERVICIO</button>
+                        <button type="submit" class="btn btn-primary btn-block mb-4"name="accion" value="Servicio">SOLICITAR SERVICIO</button>
 
                     </form>
                 </div>
@@ -111,14 +115,14 @@
         </div>
         <div class="container">
             <h2>LISTA DE PEDIDOS</h2>
-        <table border = "1">
+        <table class="table table-bordered border-dark">
                 <thead>
                     <tr>
-                        <td>Id orden</td>
-                        <td>Descripción</td>
-                        <td>Fecha de recolección</td>
-                        <td>Estado</td>
-                        <td>Dimensiones</td>
+                       <th scope="col">Id orden</th>
+                        <th scope="col">Descripción</th>
+                        <th scope="col">Fecha de recolección</th>
+                        <th scope="col">Estado</th>
+                        <th scope="col">Dimensiones</th>
                     </tr>
                 </thead>
                 <% 
@@ -128,6 +132,7 @@
                     OrdenVo regOrden = null;
                     while (iter_orden.hasNext()){
                         regOrden = iter_orden.next();
+                        String estado = null;
                     
                 %>
                 <tbody>
@@ -135,6 +140,14 @@
                         <td><%= regOrden.getId_orden() %></td>
                         <td><%= regOrden.getDescripcion() %></td>
                         <td><%= regOrden.getFecha_orden_recogida() %></td>
+                        <% if ( regOrden.getEstado().equals("6") ) {
+                               estado = "Ingresada";
+                            }else if ( regOrden.getEstado().equals("7") ) {
+                               estado = "En proceso";
+                            } else if( regOrden.getEstado().equals("8") ) {
+                               estado = "Finalizada";}
+                            
+                        %>
                         <td><%= regOrden.getEstado() %></td>
                         <td><%= regOrden.getDimensiones() %></td>
                     </tr>
