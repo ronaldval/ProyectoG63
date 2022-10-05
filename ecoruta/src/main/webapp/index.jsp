@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
+
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,10 +19,10 @@
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>7
         <link rel="icon" href="img/icono.png"/>
-        
+
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
-    <body>
+    <body  background="./img/header-bg.jpg">
         <header class="p-3 mb-2 bg-success text-white">
             <div class="container">
                 <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
@@ -37,9 +37,9 @@
                         <input type="Buscar" class="form-control form-control-dark" placeholder="Buscar..." aria-label="Buscar">
                     </form>
                     <div class="text-end">
-                        <button type="button" onclick="location.href='vistas/ini_sesion.jsp'" class="btn btn-outline-light me-2"> Iniciar Sesion</button>
-                       
-                        <button type="button" onclick="location.href='vistas/crear_cuenta.jsp'" class="btn btn-warning">Registro</button>
+                        <button type="button" onclick="location.href = 'vistas/ini_sesion.jsp'" class="btn btn-outline-light me-2"> Iniciar Sesion</button>
+
+                        <button type="button" onclick="location.href = 'vistas/crear_cuenta.jsp'" class="btn btn-warning">Registro</button>
                     </div>
                 </div>
             </div>
@@ -67,55 +67,104 @@
                             <li class="nav-item">
                                 <a class="nav-link"  href="Controlador?accion=listarReciclador" > Listar Reciclador</a>
                             </li>
-                            
+
                         </ul>
                     </div>
                 </div>
             </nav>
         </div>
-
-        <div id="carouselExampleIndicators" class="carousel slide" data-mdb-ride="carousel">
-            <div class="carousel-indicators">
-                <button
-                    type="button"
-                    data-mdb-target="#carouselExampleIndicators"
-                    data-mdb-slide-to="0"
-                    class="active"
-                    aria-current="true"
-                    aria-label="Slide 1"
-                    ></button>
-                <button
-                    type="button"
-                    data-mdb-target="#carouselExampleIndicators"
-                    data-mdb-slide-to="1"
-                    aria-label="Slide 2"
-                    ></button>
-                <button
-                    type="button"
-                    data-mdb-target="#carouselExampleIndicators"
-                    data-mdb-slide-to="2"
-                    aria-label="Slide 3"
-                    ></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./img/header-bg.jpg" class="d-md-block w-100" alt="portada"/>
-                    <div class="carousel-caption d-none d-md-block">
-                        <h2>Primer Slide Mensaje</h2>
-                        <h5>title</h5>
-                        <p>Mensaje ecologico para invitar al usuario</p>
+        <br> <br>
+        <div class="container">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/img1.jpg" class="d-block w-100" alt="..." width="150" height="450">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 style="color:#11C156; background-color: rgba(195, 155, 211, 0.4);" >EcoRuta</h1>
+                            <h4 style="color:#000000; background-color: rgba(195, 155, 211, 0.4);">EcoRuta brinda la mejor solucion para recojer los desechos
+                                ya sean tecnologicos, contaminantes o reciclaje
+                                y asi disminuir la contaminacion en el medio ambiente</h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/img2.jpg" class="d-block w-100" alt="..." width="150" height="450">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 style="color:#000000; background-color: rgba(195, 155, 211, 0.4);">DESECHOS TECNOLOGICOS</h1>
+                            <h4 style="color:#000000; background-color: rgba(195, 155, 211, 0.4);">Sabias que la basura tecnologica esta aumentando debido a la alta demanda 
+                                y que el tratamiento inadecuado puede ocasionar graves impactos al medio 
+                                y poner en riesgo la salud humana</h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/img3.jpg" class="d-block w-100" alt="..." width="150" height="450">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 style="color:#000000; background-color: rgba(195, 155, 211, 0.4);">RECICLAJE DE PILAS</h1>
+                            <h4 style="color:#000000; background-color: rgba(195, 155, 211, 0.4);">Sabias que al reciclar las pilas la materia prima puede ser utilizada 
+                                nuevamente y disminuye los daños al medio ambiente</h4>
+                        </div>
                     </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleIndicators" data-mdb-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleIndicators" data-mdb-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Siguiente</span>
-            </button>
         </div>
+        <br> <br>
+        <div class="container">
+            <div class="card-group">
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Beatriz Giraldo</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Nancy Basto</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Edith Tapias</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div><br>
+            </div>
+<div class="card-group">
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Alex Pinchao</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Ronald valdes</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <br> <br>
         <section class="">
             <!-- Footer -->
             <footer class="bg-success text-white text-center">
@@ -168,7 +217,7 @@
                                     <a href="#!" class="text-white">Beatriz Giraldo</a>
                                 </li>
                                 <li>
-                                    <a href="#!" class="text-white">Nancy Bastos</a>
+                                    <a href="#!" class="text-white">Nancy Basto</a>
                                 </li>
                                 <li>
                                     <a href="#!" class="text-white">Alex Pinchao</a>
@@ -193,5 +242,6 @@
             </footer>
             <!-- Footer -->
         </section>
+        
     </body>
 </html>
