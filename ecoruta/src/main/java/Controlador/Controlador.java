@@ -18,11 +18,11 @@ import javax.servlet.http.HttpServletResponse;
  * @author Alex
  */
 public class Controlador extends HttpServlet {
-
-    String listar = "vistas/listar.jsp";
-    String add = "vistas/add.jsp";
-    String edit = "vistas/edit.jsp";
     
+        String listar_usuario = "vistas/usuario.jsp";
+    String listar_reciclador = "vistas/reciclador.jsp";
+    String edit = "vistas/edit.jsp";
+
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
@@ -40,6 +40,7 @@ public class Controlador extends HttpServlet {
         }
     }
 
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -48,21 +49,23 @@ public class Controlador extends HttpServlet {
         String action = request.getParameter("accion");
         
         System.out.println("----------------- entro a controlador**** action" + action);
-         System.out.println("----------------- entro a controlador**** listar" + listar);
+         System.out.println("----------------- entro a controlador**** listar" + listar_usuario);
         if (action.equalsIgnoreCase("listar")) {
-            acceso = listar;
+            acceso = listar_usuario;
+        }else if (action.equalsIgnoreCase("listarReciclador")){
+            acceso = listar_reciclador;
         }
         System.out.println("----------------- entro a controlador");
         RequestDispatcher vista = request.getRequestDispatcher(acceso);
         vista.forward(request, response);
     }
 
-    
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
     }
+
 
     @Override
     public String getServletInfo() {

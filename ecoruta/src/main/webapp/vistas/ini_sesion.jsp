@@ -78,7 +78,7 @@
 
                                         <form>
                                             <div class="col-xs-6">
-                                                <a href="index.html" class="active" id="login-form-link">Inicio</a>
+                                                <a href=".\index.html" class="active" id="login-form-link">Inicio</a>
                                             </div>
 
                                             <div class="d-flex align-items-center mb-3 pb-1">

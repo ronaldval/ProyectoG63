@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,10 +21,10 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <link rel="icon" href="img/icono.png"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+        
     </head>
-    <body background="./img/header-bg.jpg">
-        <header class="p-3 mb-2 bg-success text-white">
+    <body>
+       <header class="p-3 mb-2 bg-success text-white">
             <div class="container">
                 <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                     <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
@@ -38,9 +38,9 @@
                         <input type="Buscar" class="form-control form-control-dark" placeholder="Buscar..." aria-label="Search">
                     </form>
                     <div class="text-end">
-                        <button type="button" onclick="location.href = 'ini_sesion.jsp'" class="btn btn-outline-light me-2"> Iniciar Sesion</button>
-
-                        <button type="button" onclick="location.href = 'crear_cuenta.jsp'" class="btn btn-warning">Registro</button>
+                        <button type="button" onclick="location.href='ini_sesion.jsp'" class="btn btn-outline-light me-2"> Iniciar Sesion</button>
+                       
+                        <button type="button" onclick="location.href='crear_cuenta.jsp'" class="btn btn-warning">Registro</button>
                     </div>
                 </div>
             </div>
@@ -67,6 +67,31 @@
                 </div>
             </nav>
         </div>
-        
-</body>
+    </body>
+    <<h1>Nosotros</h1>
+    <div class="clearfix">
+        <img src="./img/" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
+        <p>
+            Un párrafo de texto de marcador de posición. Lo estamos usando aquí para mostrar el uso de la clase clearfix. Estamos agregando bastantes frases sin sentido aquí para demostrar cómo las columnas interactúan aquí con la imagen flotante.
+        </p>
+        <p>
+            Como puedes ver, los párrafos se envuelven con gracia alrededor de la imagen flotante. Ahora imaginate cómo se vería esto con algún contenido real aquí, en lugar de solo este aburrido texto de marcador de posición que sigue y sigue, pero que en realidad no transmite información tangible. Simplemente ocupa espacio y en realidad no debe leerse.
+        </p>
+        <p>
+            Y, sin embargo, aquí estás, aún perseverando en la lectura de este texto de marcador de posición, con la esperanza de obtener más información o algún huevo de pascua oculto de contenido. Una broma, tal vez. Desafortunadamente, no hay nada de eso aquí.
+        </p>
+    </div>        © 2020 Copyright:
+    <a class="text-white" href="">Grupo 63-1</a>
+</div>
+<div class="container overflow-hidden">
+    <div class="row gx-5">
+        <div class="col">
+            <div class="p-3 border bg-light">Custom column padding</div>
+        </div>
+        <div class="col">
+            <div class="p-3 border bg-light">Custom column padding</div>
+        </div>
+    </div>
+</div>
+    </body>
 </html>

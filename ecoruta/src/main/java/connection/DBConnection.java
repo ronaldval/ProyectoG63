@@ -84,7 +84,7 @@ import java.sql.DriverManager;
 
 public class DBConnection {
     Connection connection;
-    static String bd="ecorutaNew";
+    static String bd="ecorutadb";
     static String port="3306";
     static String login="root";
     static String password="admin";
