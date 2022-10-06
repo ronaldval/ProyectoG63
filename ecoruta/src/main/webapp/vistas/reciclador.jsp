@@ -53,20 +53,14 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="nosotros.html">NOSOTROS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="aliados.html">ALIADOS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contactanos.html">SERVICIOS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contactanos.html">PLANES ECOLOGICOS</a>
-                        </li>
+                                <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contactanos.html">CONTACTANOS</a>
+                            </li>
                     </ul>
                 </div>
             </div>

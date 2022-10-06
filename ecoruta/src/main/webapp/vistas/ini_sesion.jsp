@@ -11,7 +11,7 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>EcoRuta/sesion usuario</title>
+        <title>EcoRuta/Iniciar Sesion</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -32,8 +32,9 @@
                         <input type="Buscar" class="form-control form-control-dark" placeholder="Buscar..." aria-label="Search">
                     </form>
                     <div class="text-end">
-                        <button type="button" class="btn btn-outline-light me-2" href="crear.html">Iniciar</button>
-                        <button type="button" class="btn btn-warning" >Registro</button>
+                        <button type="button" onclick="location.href = 'ini_sesion.jsp'" class="btn btn-outline-light me-2"> Iniciar Sesion</button>
+
+                        <button type="button" onclick="location.href = 'crear.jsp'" class="btn btn-warning">Registro</button>
                     </div>
                 </div>
             </div>
@@ -53,15 +54,6 @@
                                 <a class="nav-link" href="nosotros.html">NOSOTROS</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="crear.html">ALIADOS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contactanos.html">SERVICIOS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contactanos.html">PLANES ECOLOGICOS</a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link" href="contactanos.html">CONTACTANOS</a>
                             </li>
                         </ul>
@@ -75,16 +67,18 @@
                     <div class="col col-xl-10">
                         <div class="card" style="border-radius: 1rem;">
                             <div class="row g-0">
+                                
+                                <div>
+                               
+                                    
+                                </div>
                                 <div class="col-md-6 col-lg-5 d-none d-md-block">
-                                    <img src="img/desechos.jpg" alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
+                                    <img src="https://cdn.pixabay.com/photo/2013/07/13/12/05/earth-159131_960_720.png" alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
                                 </div>
                                 <div class="col-md-6 col-lg-7 d-flex align-items-center">
                                     <div class="card-body p-4 p-lg-5 text-black">
 
                                         <form action="Controlador">
-                                            <div class="col-xs-6">
-                                                <a href="index.html" class="active" id="login-form-link">Inicio</a>
-                                            </div>
 
                                             <div class="d-flex align-items-center mb-3 pb-1">
                                                 <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
@@ -108,7 +102,7 @@
                                             </div>
 
 
-                                            <p class="mb-5 pb-lg-2" style="color: #393f81;">aun no tiene cuenta? <a href="crear.html" style="color: #393f81;">Registrese aqui</a></p>
+                                            <p class="mb-5 pb-lg-2" style="color: #393f81;">aun no tiene cuenta? <a href="crear.jsp" style="color: #393f81;">Registrese aqui</a></p>
 
                                         </form>
 

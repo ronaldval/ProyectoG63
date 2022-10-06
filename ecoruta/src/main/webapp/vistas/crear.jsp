@@ -34,8 +34,9 @@
                         <input type="Buscar" class="form-control form-control-dark" placeholder="Buscar..." aria-label="Search">
                     </form>
                     <div class="text-end">
-                        <button type="button" class="btn btn-outline-light me-2" href="crear.html">Iniciar</button>
-                        <button type="button" class="btn btn-warning">Registro</button>
+                        <button type="button" onclick="location.href = 'ini_sesion.jsp'" class="btn btn-outline-light me-2"> Iniciar Sesion</button>
+
+                        <button type="button" onclick="location.href = 'crear.jsp'" class="btn btn-warning">Registro</button>
                     </div>
                 </div>
             </div>
@@ -55,13 +56,7 @@
                                 <a class="nav-link" href="nosotros.html">NOSOTROS</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="crear.html">ALIADOS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contactanos.html">SERVICIOS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contactanos.html">PLANES ECOLOGICOS</a>
+                                <a class="nav-link" href="contactanos.html">CONTACTANOS</a>
                             </li>
                         </ul>
                     </div>
@@ -74,16 +69,16 @@
                     <div class="col col-xl-10">
                         <div class="card" style="border-radius: 1rem;">
                             <div class="row g-0">
+                                <div><h3 class="text-center" style="color:green;">BIENVENIDO A ECORUTA</h3></div>
                                 <div class="col-md-6 col-lg-5 d-none d-md-block">
-                                    <img src="img/desechos.jpg" alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
+                                    <h4 class="text-center" style="color:teal;">Clasifica tus desechos<br> y ayudanos a cuidar el medio ambiente</h4>
+                                    <img src="https://media.istockphoto.com/vectors/ewaste-recycle-bin-with-old-electronic-equipment-vector-id693971212?k=20&m=693971212&s=612x612&w=0&h=DXbIceUx-0GQBCO5pGbXb1VZiAl5mCCq_4I8pJTwwTc=" alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
                                 </div>
                                 <div class="col-md-6 col-lg-7 d-flex align-items-center">
                                     <div class="card-body p-4 p-lg-5 text-black">
 
                                         <form action="Controlador"> 
-                                            <div class="col-xs-6">
-                                                <a href="index.html" class="active" id="login-form-link">Inicio</a>
-                                            </div>
+                                            
                                          
                                             <!--<div class="input-group mb-3">
                                                 <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" name="txtTipoId">TIPO DE IDENTIFICACION</button>
@@ -96,7 +91,7 @@
                                             </div>-->
                                             
                                             <div class="col-md-4">
-                                                <label for="tipo">TIPO DE IDENTIFICACIÓN</label>
+                                                <label for="tipo"></label>
                                                 <select name="txtTipoId" id="tipo" class="form-select" required>
                                                     <option selected disabled value="">Seleccione...</option>
                                                     <option>CEDULA</option>
