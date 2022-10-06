@@ -34,9 +34,9 @@
                         <input type="Buscar" class="form-control form-control-dark" placeholder="Buscar..." aria-label="Search">
                     </form>
                     <div class="text-end">
-                        <button type="button" onclick="location.href = 'ini_sesion.jsp'" class="btn btn-outline-light me-2"> Iniciar Sesion</button>
+                        <button type="button" onclick="location.href='Controlador?accion=ini_sesion'" class="btn btn-outline-light me-2"> Iniciar Sesion</button>
 
-                        <button type="button" onclick="location.href = 'crear.jsp'" class="btn btn-warning">Registro</button>
+                        <button type="button" onclick="location.href='Controlador?accion=crear'" class="btn btn-warning">Registro</button>
                     </div>
                 </div>
             </div>

@@ -32,9 +32,9 @@
                         <input type="Buscar" class="form-control form-control-dark" placeholder="Buscar..." aria-label="Search">
                     </form>
                     <div class="text-end">
-                        <button type="button" onclick="location.href = 'ini_sesion.jsp'" class="btn btn-outline-light me-2"> Iniciar Sesion</button>
+                        <button type="button" onclick="location.href='Controlador?accion=ini_sesion'" class="btn btn-outline-light me-2"> Iniciar Sesion</button>
 
-                        <button type="button" onclick="location.href = 'crear.jsp'" class="btn btn-warning">Registro</button>
+                        <button type="button" onclick="location.href='Controlador?accion=crear'" class="btn btn-warning">Registro</button>
                     </div>
                 </div>
             </div>
@@ -51,10 +51,10 @@
                                 <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+                                <a class="nav-link" href="vistas/nosotros.html">NOSOTROS</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contactanos.html">CONTACTANOS</a>
+                                <a class="nav-link" href="vistas/contactanos.html">CONTACTANOS</a>
                             </li>
                         </ul>
                     </div>
@@ -86,6 +86,15 @@
                                             </div>
 
                                             <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Iniciar sesion en su cuenta</h5>
+                                            
+                                            <div class="col-md-4">
+                                                <label for="tipo_iniciar">TIPO DE INGRESO</label>
+                                                <select name="txtTipo" id="tipo_iniciar" class="form-select" required>
+                                                    <option selected disabled value="">Seleccione...</option>
+                                                    <option>RECICLADOR</option>
+                                                    <option>USUARIO</option> 
+                                                </select>
+                                            </div><br><br>
 
                                             <div class="form-outline mb-4">
                                                 <input type="number" id="Identificacion"   name="txtIdentificacion" class="form-control form-control-lg" />
