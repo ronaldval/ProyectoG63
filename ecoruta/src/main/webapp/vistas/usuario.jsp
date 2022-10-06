@@ -59,13 +59,7 @@
                                 <a class="nav-link" href="nosotros.html">NOSOTROS</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="aliados.html">ALIADOS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contactanos.html">SERVICIOS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contactanos.html">PLANES ECOLOGICOS</a>
+                                <a class="nav-link" href="contactanos.html">CONTACTANOS</a>
                             </li>
                         </ul>
                     </div>
