@@ -57,10 +57,14 @@
                                 <a class="nav-link active" aria-current="page" href="index.jsp">INICIO</a>
                             </li>
                             <li class="nav-item">
+<<<<<<< Updated upstream
                                 <a class="nav-link" href="nosotros.jsp">NOSOTROS</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="contactanos.jsp">CONTACTANOS</a>
+=======
+                                <a class="nav-link" href="contactanos.html">CONTACTANOS</a>
+>>>>>>> Stashed changes
                             </li>
                         </ul>
                     </div>

@@ -54,6 +54,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
+<<<<<<< Updated upstream
                                 <a class="nav-link active" aria-current="page" href="index.jsp">INICIO</a>
                             </li>
                             <li class="nav-item">
@@ -61,6 +62,15 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="contactanos.jsp">CONTACTANOS</a>
+=======
+                                <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contactanos.html">CONTACTANOS</a>
+>>>>>>> Stashed changes
                             </li>
                     </ul>
                 </div>
