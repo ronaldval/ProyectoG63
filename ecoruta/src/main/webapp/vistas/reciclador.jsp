@@ -9,6 +9,7 @@
 <%@page import="java.util.List"%>
 <%@page import="model.OrdenDao"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page session="true"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -79,8 +80,10 @@
                         </tr>
                     </thead>
                     <% 
+                    HttpSession s = request.getSession();
+                    Integer documento = (Integer)s.getAttribute("documento");
                     OrdenDao ordendaot = new OrdenDao();
-                    List<OrdenVo> listordent = ordendaot.listar_total();
+                    List<OrdenVo> listordent = ordendaot.listar_total(documento);
                     Iterator<OrdenVo> iter_ordent = listordent.iterator();
                     OrdenVo regOrdent = null;
                     while (iter_ordent.hasNext()){
@@ -118,7 +121,7 @@
                 </thead>
                 <% 
                     OrdenDao ordendao = new OrdenDao();
-                    List<OrdenVo> listorden = ordendao.listar();
+                    List<OrdenVo> listorden = ordendao.listar_ordenes_reciclador(documento);
                     Iterator<OrdenVo> iter_orden = listorden.iterator();
                     OrdenVo regOrden = null;
                     while (iter_orden.hasNext()){

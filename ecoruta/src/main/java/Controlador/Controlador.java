@@ -20,6 +20,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import model.OrdenDao;
 import model.RegistroDao;
 import modelVo.OrdenVo;
@@ -144,6 +145,8 @@ public class Controlador extends HttpServlet {
             
          }else if (action.equalsIgnoreCase("Acceder")){
             
+             HttpSession s = request.getSession();
+             
             String documento = request.getParameter("txtIdentificacion");
             String contrasena  = request.getParameter("txtContrasena");
             System.out.println("----------------- entro a controlador Acceder");
@@ -154,18 +157,31 @@ public class Controlador extends HttpServlet {
                 List<RegistroVo> consulta_login = regDao.consulta_login(reg);
 
                 System.out.println("----------------- entro a controlador consulta_login" + consulta_login);
-                Iterator<RegistroVo> iter_ordent = consulta_login.iterator();
-                RegistroVo regOrdent = null;
-                while (iter_ordent.hasNext()){
-                regOrdent = iter_ordent.next();
-                System.out.println("nombre "+ regOrdent.getNombre() + " apellido "+ regOrdent.getApellido()+ " tipo "+ regOrdent.getTipo_usuario());
+                
+                if(!consulta_login.isEmpty()){
+                    Iterator<RegistroVo> iter_ordent = consulta_login.iterator();
+                    RegistroVo regOrdent = null;
+                    while (iter_ordent.hasNext()){
+                    regOrdent = iter_ordent.next();
+                        if(regOrdent.getTipo_usuario().equals(4)){
+                            s.setAttribute("documento", regOrdent.getNumero_documento());
+                            acceso = listar_usuario;
+ 
+                        }else if (regOrdent.getTipo_usuario().equals(5)){
+                            s.setAttribute("documento", regOrdent.getNumero_documento());
+                            acceso = listar_reciclador;
+                        }
+                    System.out.println("nombre "+ regOrdent.getNombre() + " apellido "+ regOrdent.getApellido()+ " documento "+ regOrdent.getNumero_documento() + " tipo "+ regOrdent.getTipo_usuario());
+                    }
+                }else{
+                    System.out.println("Usuario y/o contraseña incorrecto ");
                 }
             } catch (SQLException ex) {
                 Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
             }
             
             
-            acceso = index;
+            //acceso = index;
             
          }
         System.out.println("----------------- entro a controlador");

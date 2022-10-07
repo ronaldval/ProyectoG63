@@ -88,7 +88,7 @@ public class RegistroDao {
         PreparedStatement ps = null;
         ResultSet rs = null;
         
-        String consulta = "SELECT Nombre, Apellidos, Tipo_Usuario from Registro where Numero_Documento ='"+reg.getNumero_documento()+"' and Contrasena = '"+reg.getContrasena()+"'" ;
+        String consulta = "SELECT Nombre, Apellidos, Numero_Documento, Tipo_Usuario from Registro where Numero_Documento ='"+reg.getNumero_documento()+"' and Contrasena = '"+reg.getContrasena()+"'" ;
         System.out.println("----------------- entro en registrodao consulta_login "+consulta);
         try {
             
@@ -101,6 +101,7 @@ public class RegistroDao {
                 RegistroVo vo = new RegistroVo();
                 vo.setNombre(rs.getString("Nombre"));
                 vo.setApellido(rs.getString("Apellidos"));
+                vo.setNumero_documento(rs.getInt("Numero_Documento"));
                 vo.setTipo_usuario(rs.getInt("Tipo_Usuario"));
                 respuesta_login.add(vo);
             }

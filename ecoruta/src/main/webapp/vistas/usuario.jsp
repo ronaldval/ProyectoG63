@@ -9,6 +9,7 @@
 <%@page import="modelVo.OrdenVo"%>
 <%@page import="model.OrdenDao"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page session="true"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -120,8 +121,10 @@
                     </tr>
                 </thead>
                 <% 
+                    HttpSession s = request.getSession();
+                    Integer documento = (Integer)s.getAttribute("documento");
                     OrdenDao ordendao = new OrdenDao();
-                    List<OrdenVo> listorden = ordendao.listar();
+                    List<OrdenVo> listorden = ordendao.listar_ordenes_usuario(documento);
                     Iterator<OrdenVo> iter_orden = listorden.iterator();
                     OrdenVo regOrden = null;
                     while (iter_orden.hasNext()){
