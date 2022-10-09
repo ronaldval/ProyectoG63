@@ -1,0 +1,50 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 22 sep 2022, 16:55:36
+    Author     : Paolita
+*/
+
+/* 
+    
+*/
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+/* 
+    MENU
+*/
+#menu li > a{
+    font-size: 18px;
+    font-weight: bold;
+    color: #3f3f3f;
+}
+
+#menu form > button{
+    font-size: 18px;
+    font-weight: bold;
+}
+/* 
+    carrusel
+*/
+
+.carousel-inner{
+    max-height: 39rem;
+}
+
+.slide{
+    margin-top: 10px;
+}
+.slide img{
+    height: 65vh;
+}
+
+@media (max-width: 768px){
+    #section1{
+        width:90% !important;
+    }
+}
+
